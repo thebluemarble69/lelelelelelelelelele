@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Iphone Replica</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+        *{margin: 0;padding: 0;box-sizing: border-box; text-align: center;}
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(to bottom left, rgb(56, 12, 56) 70%, rgb(93, 60, 94));
+            overflow: hidden;
+        }
+        .iphone{
+            height: 887px;
+            width: 438px; /*452*/
+            margin: 2.6rem auto 0 auto;
+            box-sizing: content-box;
+            /*background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iclarified.com%2Fimages%2Fnews%2F93874%2F449380%2F449380.jpg&f=1&nofb=1&ipt=56c4aae3897aeebdc6d28d2467309bb958171c831c46e499b701756b7edea003");*/
+            background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.idownloadblog.com%2Fwp-content%2Fuploads%2F2024%2F09%2FiPhone-16-White-wallpaper.jpeg&f=1&nofb=1&ipt=6a368347a8b86bb5a060cc154fad719edf4195996dfcc7c8c775283551d4416a");
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 84px;
+            position: relative;
+            border: 9px solid black;
+        }
+        .iphone::before{
+            content: '';
+            width: 462px; /*476*/
+            height: 911px;
+            position: absolute;
+            top: 50%;
+            border-radius: 84px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: antiquewhite;
+            z-index: -1;
+        }
+        .iphone::after{
+            content: '';
+            width: 469px; /*483*/
+            height: 918px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 86px;
+            transform: translate(-50%,-50%);
+            background-color: rgb(155, 148, 139);
+            z-index: -2;
+        }
+        .hidden {
+            position: absolute;
+            border-radius: 20px;
+            height: 36px;
+            width: 4px;
+            background-image: linear-gradient(to bottom, white 10%, antiquewhite);
+            top: 7rem;
+            left: -18px;
+        }
+        .hidden1{position: absolute;border-radius: 20px;background-image: linear-gradient(to bottom, white 10%, antiquewhite);
+            top: 13rem;
+            left: -18px;
+            width: 4px;
+            height: 65px;
+        }
+        .hidden2{position: absolute;border-radius: 20px;background-image: linear-gradient(to bottom, white 10%, antiquewhite);width: 4px;
+            top: 18rem;
+            left: -18px;
+            height: 65px;
+        }
+        .hidden3{position: absolute;border-radius: 20px;background-image: linear-gradient(to bottom, white 10%, antiquewhite);width: 4px;
+            height: 85px;
+            top: 15.3rem;
+            right: -18px;
+        }
+        .iphone .dynamic{
+            width: 100%;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .wifi {
+            display: flex;
+            gap: 8px;
+            transform: translateX(-10px);
+        }
+        .dynamic-bottle {
+            background-color: black;
+            width: 117px;
+            height: 35px;
+            justify-self: center;
+            border-radius: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            transform: translateX(18px);
+        }
+        .dynamic-bottle img{
+            height: 75%;
+            aspect-ratio: 1/1;
+            transform: translateX(-4px);
+        }
+        .iphone .dynamic .time h5{
+            color: #fff;
+            text-align: center;
+            font-family: "Gabarito", sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            transform: translateX(20px);
+        }
+        .iphone .main {
+            /* display: grid; */
+            margin: 1rem 1.95rem 0 1.95rem;
+            height: auto; /* 61%*/
+            /* gap: 1rem; */
+            /* grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:
+                'bigbox1 bigbox1 bigbox bigbox'
+                'bigbox1 bigbox1 bigbox bigbox'
+                'smolbox1 smolbox2 smolbox3 smolbox4'
+                'smolbox5 smolbox6 smolbox7 smolbox8'
+                'smolbox9 smolbox11 smolbox12 smolbox13'
+                'smolbox14 smolbox15 smolbox16 smolbox';*/
+        }
+
+        .iphone .main .bapps{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 'bigbox1 bigbox';
+        }
+        #f{transform: translateX(60px);margin-top: 3px;}
+        #e{transform: translateX(-47px);margin-top: 3px;}
+        .iphone .main .apps{
+            margin-top: 1rem;
+            row-gap: 12px;
+            column-gap: 36px;
+            display: grid;
+            grid-template-columns: repeat(4 ,1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                'smolbox1 smolbox2 smolbox3 smolbox4'
+                'smolbox5 smolbox6 smolbox7 smolbox8'
+                'smolbox9 smolbox11 smolbox12 smolbox13'
+                'smolbox14 smolbox15 smolbox16 smolbox';
+        }
+
+
+        .iphone .search{
+            height: 30px;
+            border-radius: 990px;
+            width: 102px;
+            margin: 2.2rem auto 0.88rem auto;
+            position: relative;
+        }
+        .search::before{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: '';
+            width: 104%;
+            height: 104%;
+            background-image: conic-gradient(from 106deg, white 0deg 20deg, transparent 20deg 160deg, white 160deg 180deg,transparent 180deg 360deg);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+        .iphone .docbar{
+            margin: 0 auto;
+            width: 98%;
+            height: 124px;
+            border-radius: 53px;
+            border: 3px solid #ffffff94;
+        }
+        .iphone .gesture{
+            position: absolute;
+            background-color: white;
+            border-radius: 90px;
+            width: 111px;
+            height: 5px;
+            bottom: 3px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .apps > .icons:nth-child(1),
+        .apps > .icons:nth-child(5),
+        .apps > .icons:nth-child(9),
+        .apps > .icons:nth-child(13){
+            align-items: flex-start;
+        }
+        .apps > .icons:nth-child(4),
+        .apps > .icons:nth-child(8),
+        .apps > .icons:nth-child(12),
+        .apps > .icons:nth-child(16){
+            align-items: flex-end;
+        }
+        .apps > .icons:nth-child(4) p,
+        .apps > .icons:nth-child(8) p,
+        .apps > .icons:nth-child(12) p,
+        .apps > .icons:nth-child(16) p{
+            transform: translateX(-20px);
+        }
+        .apps > .icons:nth-child(1) p,
+        .apps > .icons:nth-child(5) p,
+        .apps > .icons:nth-child(9) p,
+        .apps > .icons:nth-child(13) p{
+            transform: translateX(20px);
+        }
+
+
+        .icons-path{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: baseline;
+        }
+        .app{
+            aspect-ratio: 1/1;
+            width: 68px;
+            border-radius: 16px;
+            border: 2px solid #ffffff94;
+        }
+
+        .app2,.app22{
+            aspect-ratio: 1/1;
+            width: 179px;
+            border-radius: 30px;
+            border-left: 2px solid #ffffff94;
+            border-right: 2px solid #ffffff94;
+        }
+        .app22,#e{
+            align-self: flex-end;
+        }
+        p{color: rgba(255, 255, 255, 0.814);text-align: center; font-size: 13px;font-family: "Gabarito", sans-serif;font-weight: 200; margin-top: 2px;}
+        span{position: absolute;z-index: 4;display: flex;color: rgba(255, 255, 255, 0.801);gap: 8px;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 14px;}
+
+        .docbar .docbae{
+            display: flex;
+            width: 82%;
+            margin: 1rem auto 0 auto;
+            height: 30px;
+        }
+        .LGwrapper{
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1); */
+        }
+        .LGeffect{
+            position: absolute;
+            overflow: hidden;
+            inset: 0;
+            z-index: 1;
+            backdrop-filter: blur(4px);
+            filter: url(#glass-distortion);
+            overflow: hidden;
+            isolation: isolate;
+        }
+        .LGtint{
+            position: absolute;
+            z-index: 3;
+            inset: 0;
+            background: rgb(255, 255, 255, 18%);
+        }
+        .LGshine{
+            position: absolute;
+            overflow: hidden;
+            inset: 0;
+            z-index: 4;
+            /* box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
+                inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5); */
+        }
+        .LGwrapperd{
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1); */
+        }
+        .LGeffectd{
+            position: absolute;
+            overflow: hidden;
+            inset: 0;
+            z-index: 1;
+            backdrop-filter: blur(4px);
+            filter: url(#glass-distortion);
+            overflow: hidden;
+            isolation: isolate;
+        }
+        .LGtintd{
+            position: absolute;
+            z-index: 3;
+            inset: 0;
+            background: rgb(255, 255, 255, 16%);
+        }
+        .LGshined{
+            position: absolute;
+            overflow: hidden;
+            inset: 0;
+            z-index: 4;
+        }
+        .dc {
+            aspect-ratio: 1/1;
+            /* width: 30px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="iphone">
+        <div class="hidden"></div>
+        <div class="hidden1"></div>
+        <div class="hidden2"></div>
+        <div class="hidden3"></div>
+        <div class="dynamic">
+            <div class="time"><h5>9:11</h5></div>
+            <div class="dynamic-bottle"><img src="ios1.png"></div>
+            <div class="wifi">
+                <svg width="19px" height="19px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 7L1.17157 5.82843C2.98259 4.01741 5.43884 3 8 3C10.5612 3 13.0174 4.01742 14.8284 5.82843L16 7L14.5858 8.41421L13.4142 7.24264C11.9783 5.8067 10.0307 5 8 5C5.96928 5 4.02173 5.8067 2.58579 7.24264L1.41421 8.41421L0 7Z" fill="#ffffff"/>
+                <path d="M4.24264 11.2426L2.82843 9.82843L4 8.65685C5.06086 7.59599 6.49971 7 8 7C9.50029 7 10.9391 7.59599 12 8.65686L13.1716 9.82843L11.7574 11.2426L10.5858 10.0711C9.89999 9.38527 8.96986 9 8 9C7.03014 9 6.1 9.38527 5.41421 10.0711L4.24264 11.2426Z" fill="#ffffff"/>
+                <path d="M8 15L5.65685 12.6569L6.82842 11.4853C7.13914 11.1746 7.56057 11 8 11C8.43942 11 8.86085 11.1746 9.17157 11.4853L10.3431 12.6569L8 15Z" fill="#ffffff"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25px" height="25px">
+                    <path d="M396 144H64c-26.4 0-48 21.6-48 48v128c0 26.4 21.6 48 48 48h332c26.4 0 48-21.6 48-48V192c0-26.4-21.6-48-48-48zm20 176c0 11-9 20-20 20H64c-11 0-20-9-20-20V192c0-11 9-20 20-20h332c11 0 20 9 20 20v128zM464 204.6v102.8c16 0 32-27.7 32-51.4s-16-51.4-32-51.4z" fill="#ffffff"/>
+                    <path d="M384 192H76c-6.6 0-12 5.4-12 12v104c0 6.6 5.4 12 12 12h308c6.6 0 12-5.4 12-12V204c0-6.6-5.4-12-12-12z" fill="#ffffff"/>
+                </svg>
+            </div>
+        </div>
+        <div class="main">
+            <div class="bapps">
+                <div class="icons-path" style="grid-area: bigbox1;">
+                    <div class="app2 LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p id="f">Weather</p>
+                </div>
+                <div class="icons-path" style="grid-area: bigbox;">
+                    <div class="app22 LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p id="e">Find my dick</p>
+                </div>
+            </div>
+            <div class="apps">
+                <div class="icons" style="grid-area: smolbox1;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p style="transform: translateX(11px);">Google</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox2;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p>Discord</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox3;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p>Messages</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox4;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p style="transform: translateX(-9px);">Rampuri</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox5;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p style="transform: translateX(14px);">Notes</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox6;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox7;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p>Mrudun</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox8;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p style="transform: translateX(-6px);">Incognito</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox9;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p style="transform: translateX(7px);">Elephant</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox11;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p>Minecrarft</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox12;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p>Happy</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox13;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p style="transform: translateX(-4px);">Play Store</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox14;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p style="transform: translateX(19px);">Esay</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox15;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p>Ebay</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox16;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p>Mumbai</p>
+                </div>
+                <div class="icons" style="grid-area: smolbox;">
+                    <div class="app LGwrapper">
+                        <div class="LGeffect"></div>
+                        <div class="LGtint"></div>
+                        <div class="LGshine"></div>
+                    </div>
+                    <p style="transform: translateX(-16px);">China</p>
+                </div>
+            </div>
+        </div>
+        <div class="search LGwrapper">
+            <div class="LGeffect"></div>
+            <div class="LGtint"></div>
+            <div class="LGshine"></div>
+            <span><i class="ri-search-line"></i><p style="margin: 0;color: rgba(255, 255, 255, 0.801);">Search</p></span>
+        </div> 
+        <div class="docbar LGwrapperd">
+            <div class="LGeffectd"></div>
+            <div class="LGtintd"></div>
+            <div class="LGshined"></div>
+            <div class="docbae" style="display: none;">
+                <div class="dc LGwrapper">
+                    <div class="LGeffectd"></div>
+                    <div class="LGtintd"></div>
+                    <div class="LGshined"></div>
+                    <img src="./asssets/icons8-vissa-48.png" style="width: 24px;">
+                </div>
+                <div class="dc LGwrapper">
+                    <div class="LGeffectd"></div>
+                    <div class="LGtintd"></div>
+                    <div class="LGshined"></div>
+                </div>
+                <div class="dc LGwrapper">
+                    <div class="LGeffectd"></div>
+                    <div class="LGtintd"></div>
+                    <div class="LGshined"></div>
+                </div>
+                <div class="dc LGwrapper">
+                    <div class="LGeffectd"></div>
+                    <div class="LGtintd"></div>
+                    <div class="LGshined"></div>
+                </div>
+            </div>
+        </div>
+        <div class="gesture"></div>
+    </div>
+
+
+
+    <svg style="display: none;">
+        <filter
+            id="glass-distortion"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            filterUnits="objectBoundingBox"
+        >
+        <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.01 0.01"
+            numOctaves="1"
+            seed="5"
+            result="turbulence"
+        />
+
+        <feComponentTransfer in="turbulence" result="mapped">
+            <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+            <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+            <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+        </feComponentTransfer>
+
+        <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+
+        <feSpecularLighting
+            in="softMap"
+            surfaceScale="5"
+            specularConstant="1"
+            specularExponent="100"
+            lighting-color="white"
+            result="specLight"
+        >
+            <fePointLight x="-200" y="-200" z="300" />
+        </feSpecularLighting>
+
+        <feComposite
+            in="specLight"
+            operator="arithmetic"
+            k1="0"
+            k2="1"
+            k3="1"
+            k4="0"
+            result="litImage"
+        />
+
+        <feDisplacementMap
+            in="SourceGraphic"
+            in2="softMap"
+            scale="150"
+            xChannelSelector="R"
+            yChannelSelector="G"
+        />
+
+        </filter>
+    </svg>
+</body>
+</html>
